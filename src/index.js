@@ -22,9 +22,7 @@ $(document).ready(() => {
     $("main").append(`<div id="accordion">`);
     movies.forEach(({title, rating, id}) => {
       console.log(`id#${id} - ${title} - rating: ${rating}`);
-      console.log(`<div id="heading${id}"></div>`);
-      $("main").append(renderMovieList(title, rating, id));
-      // $("main").append(`${title} - rating: ${rating}`);
+      $("#accordion").append(renderMovieList(title, rating, id));
     });
     $("main").append(`</div>`);
   }).catch((error) => {

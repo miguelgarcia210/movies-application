@@ -12,3 +12,30 @@ html, body {
 .jumbotron {
     height: 8em;
 }
+
+.movie-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 2.5em;
+}
+
+.movie-description {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.edit-button {
+    grid-area: 2 / 4 / 2 / 5 ;
+    /*margin: 1em 5px 0;*/
+    margin: 5px 5px;
+    height: 2em;
+    width: 4em;
+}
+
+.delete-button {
+    grid-area: 2 / 5 / 2 / 6 ;
+    /*margin: 1em 5px 0;*/
+    margin: 5px 5px;
+    height: 2em;
+    width: 4em;
+    text-align: center;
+}
